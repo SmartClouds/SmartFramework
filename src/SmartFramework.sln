@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32210.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart.Client.Web.BlazorUI", "..\src\Client\Web\Smart.Client.Web.BlazorUI\Smart.Client.Web.BlazorUI.csproj", "{395D3D79-B0B9-4466-AC27-B8FF26918CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smart.Client.Web.BlazorUI", "Client\Web\Smart.Client.Web.BlazorUI\Smart.Client.Web.BlazorUI.csproj", "{395D3D79-B0B9-4466-AC27-B8FF26918CD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{327F9CE6-73C5-46CB-B0A6-38F3C0D55A9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0D4BC0BD-93E6-4C65-BB08-D853D32F55E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Playground", "Playground", "{A6DEBFE6-E52D-4EA5-A7EC-8754BB62E503}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +24,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{395D3D79-B0B9-4466-AC27-B8FF26918CD7} = {0D4BC0BD-93E6-4C65-BB08-D853D32F55E0}
+		{0D4BC0BD-93E6-4C65-BB08-D853D32F55E0} = {327F9CE6-73C5-46CB-B0A6-38F3C0D55A9D}
+		{A6DEBFE6-E52D-4EA5-A7EC-8754BB62E503} = {0D4BC0BD-93E6-4C65-BB08-D853D32F55E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A1FB0DB-B289-4DFE-814B-C67F7CA4BE2D}
