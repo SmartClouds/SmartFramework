@@ -1,0 +1,11 @@
+﻿@page "/"
+@namespace Smart.Client.Web.BlazorUI.Playground.Web.Pages
+@using Smart.Client.Web.BlazorUI.Playground.Shared
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+    var isBlazorServer = BlazorModeDetector.Current.IsBlazorServer();
+}
+
+<component type="typeof(App)"
+            render-mode="@(isBlazorServer ? RenderMode.ServerPrerendered : RenderMode.WebAssemblyPrerendered)" />
